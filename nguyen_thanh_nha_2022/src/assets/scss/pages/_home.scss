@@ -1,0 +1,70 @@
+.home {
+    padding: 60px 0;
+
+    .search {
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            display: flex;
+            justify-content: flex-end;
+            width: 80%;
+
+            #search {
+                width: 40%;
+            }
+        }
+    }
+
+    div {
+        h1 {
+            @include text($fs-2xl, $fw-7, $lh-48, $c-dark)
+        }
+
+        .info {
+            div {
+                @include text ($fs-xl, $fw-6, $lh-36, $c-dark) // h2 {
+
+            }
+
+            .tags {
+                text-align: right;
+
+                button {
+                    border: 1px solid magenta;
+                }
+            }
+        }
+
+        .desc {
+            @include text ($fs-l, $fw-4, $lh-29, $c-dark)
+        }
+
+        .comment {
+            padding: 20px 0;
+
+            div {
+                img {
+                    width: 50%;
+                    border-radius: 50%;
+                }
+            }
+
+            .col-10 {
+                div {
+                    .name {
+                        @include text ($fs-m, $fw-3, $lh-24, gray)
+                    }
+
+                    p {
+                        @include text ($fs-m, $fw-3, $lh-24, $c-gray-cb)
+                    }
+                }
+
+                p {
+                    @include text ($fs-l, $fw-4, $lh-29, #616161)
+                }
+            }
+        }
+    }
+}

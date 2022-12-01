@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+
+    .logo {
+        border: 2px solid black;
+        padding-left: 20px;
+        width: 40%;
+        cursor: pointer;
+    }
+
+    .blogs {
+        width: 20%;
+        border: 2px solid black;
+
+    }
+
+    .user {
+        width: 40%;
+        border: 2px solid black;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        p {
+            margin: 0;
+        }
+    }
+}
